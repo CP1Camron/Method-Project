@@ -10,6 +10,10 @@ public class Main {
         printGreetings("Cookies");
         printGreetings("Fries");
 
+        printIDontLike("Vegetables");
+        printIDontLike("Sitting in a car for hours on end");
+        printIDontLike("Being bored");
+
         int a = 76;
         int b = 12;
         System.out.println(add(a,b));
@@ -42,6 +46,10 @@ public class Main {
         number = 9000;
         System.out.println("after number changes: " + number);
         return number;
+    }
+
+    public static void printIDontLike(String noun){
+        System.out.println("I really don't like "+ noun);
     }
 
 
