@@ -16,6 +16,8 @@ public class Main {
         int c= add(a,b);
         int d= add(c,a);
         System.out.println(d);
+        makeNumber9000(d);
+        System.out.println("outside of the method after it is called: "+d);
 
     }
 
@@ -33,6 +35,13 @@ public class Main {
         return firstNumber + secondNumber;
 
 
+    }
+
+    public static int makeNumber9000(int number) {
+        System.out.println("before number changes: " + number);
+        number = 9000;
+        System.out.println("after number changes: " + number);
+        return number;
     }
 
 
